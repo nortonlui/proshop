@@ -5,18 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Product = (props) => {
   const {
-    product: {
-      _id,
-      name,
-      image,
-      description,
-      brand,
-      category,
-      price,
-      countInStock,
-      rating,
-      numReviews,
-    },
+    product: { _id, name, image, price, rating, numReviews },
   } = props;
   return (
     <Card className="my-3 p-3 rounded">
