@@ -12,7 +12,7 @@ const style = {
 const Loader = () => {
   return (
     <Spinner animation="border" role="status" style={style}>
-      <span class="sr-only">Loading...</span>
+      <span className="sr-only">Loading...</span>
     </Spinner>
   );
 };
