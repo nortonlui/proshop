@@ -11,6 +11,7 @@ import ProfileScreen from './components/screens/ProfileScreen';
 import ShippingScreen from './components/screens/ShippingScreen';
 import PaymentScreen from './components/screens/PaymentScreen';
 import PlaceOrderScreen from './components/screens/PlaceOrderScreen';
+import OrderScreen from './components/screens/OrderScreen';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <main className="py-3">
           <Container>
             <Route path="/login" component={LoginScreen} />
+            <Route path="/order/:id" component={OrderScreen} />
             <Route path="/shipping" component={ShippingScreen} />
             <Route path="/payment" component={PaymentScreen} />
             <Route path="/placeorder" component={PlaceOrderScreen} />
