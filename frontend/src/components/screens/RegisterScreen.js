@@ -4,8 +4,8 @@ import { Form, Button, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../Message';
 import Loader from '../Loader';
-import { register } from '../../actions/userAction';
 import FormContainer from '../FormContainer';
+import { register } from '../../actions/userAction';
 
 const RegisterScreen = (props) => {
   const { location, history } = props;
