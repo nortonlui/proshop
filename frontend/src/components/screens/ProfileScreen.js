@@ -8,7 +8,7 @@ import { getUserDetails, updateUserProfile } from '../../actions/userAction';
 import { listMyOrders } from '../../actions/orderActions';
 
 const ProfileScreen = (props) => {
-  const { location, history } = props;
+  const { history } = props;
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
