@@ -6,6 +6,9 @@ import Paginate from '../Paginate';
 import Product from '../Product';
 import Loader from '../Loader';
 import Message from '../Message';
+import ProductCarousel from '../ProductCarousel';
+import Meta from '../Meta';
+import { Link } from 'react-router-dom';
 
 const HomeScreen = (props) => {
   const { match } = props;
@@ -22,6 +25,14 @@ const HomeScreen = (props) => {
 
   return (
     <>
+      <Meta />
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to="/" className="btn btn-light">
+          Go Back
+        </Link>
+      )}
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />
